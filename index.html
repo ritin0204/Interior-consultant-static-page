@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>Devchallenges</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <p class="logo-txt">THIS INTERIOR</p>
+    <ul class="nav">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Collection</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </header>
+  <main>
+
+    <div class="details">
+      <h1>Modern interior</h1>
+      <p>
+        A full-Service residential & commercial interior
+        design and staging company offering professional organizing & eco-services.
+      </p>
+      <a href="#">Read more --</a>
+    </div>
+
+    <div class="interior-img">
+
+      <img src="photo1.png" alt="Interior Image">
+
+      <div class="tweet">
+        <div class="user-details">
+          <img src="photo2.png" alt="Profile Image">
+          <div class="user-name">
+            <span class="name">Aliza Webber</span><br>
+            <span class="role">Interior designer</span>
+          </div>
+        </div>
+        <div class="tweet-content">
+          <p>
+            Designed in 2020 by Aliza Webber
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>Created by Ritin Tiwari - <a href="https://devChallenges.io">devChallenges.io</a></p>
+  </footer>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("navlist");
+      hamburger.classList.toggle("open");
+    });
+  </script>
+</body>
+
+</html>
